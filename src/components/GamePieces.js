@@ -19,8 +19,8 @@ const GamePieces = ({score, setScore, onGameOver}) => {
                 ctx.beginPath();
                 ctx.rect(snakePart.x, snakePart.y, 14, 14);
                 ctx.fillStyle = "green";
-                ctx.fill()
-                ctx.closePath()
+                ctx.fill();
+                ctx.closePath();
             });
         };
 
@@ -28,8 +28,8 @@ const GamePieces = ({score, setScore, onGameOver}) => {
             ctx.beginPath();
             ctx.rect(apple.x, apple.y, 14, 14);
             ctx.fillStyle = "red";
-            ctx.fill()
-            ctx.closePath()
+            ctx.fill();
+            ctx.closePath();
         };
 
         const moveSnake = () => {
@@ -135,7 +135,7 @@ const GamePieces = ({score, setScore, onGameOver}) => {
             drawSnake();
             drawApple();
             moveSnake();
-        }, 100)
+        }, 100);
 
         return () => {
             clearInterval(interval);
